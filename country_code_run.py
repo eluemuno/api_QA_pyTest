@@ -49,17 +49,6 @@ def fetch_payload_params():
     return payload_params
 
 
-# def get_random_origin_destination_codes():
-#     logging.info('Running get_random_origin_destination_codes...')
-#     origin_country = random.choice(fetch_country_codes()['iso_code'])
-#     destination_country = random.choice(fetch_country_codes()['iso_code'])
-#     if origin_country == destination_country:
-#         logging.warning('Origin country matches destination country...')
-#         get_random_origin_destination_codes()
-#     else:
-#         logging.info('origin code : %s and destination code : %s', origin_country, destination_country)
-#         return origin_country, destination_country
-
 
 def build_payload():
     """Build out the structure of the payload to be used for the POST request to the api endpoint"""
