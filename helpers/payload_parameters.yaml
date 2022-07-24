@@ -1,0 +1,7 @@
+parameters :
+  category :
+    - ROUND_TRIP
+    - ONE_WAY_TRIP
+  vax_status :
+    - NOT_VACCINATED
+    - VACCINATED
