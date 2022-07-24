@@ -149,41 +149,6 @@ def read_json_file():
     return json_file
 
 
-# def extract_values_from_response(key):
-#     response = json.loads(query_api())
-#     if key in response['data']:
-#         value_ = response['data'][key]
-#         return value_
-#     else:
-#         print(key + ' does not exist in response')
-
-
-# def get_response_structure(*args):
-#     """Pass the full tree structure up to the key you want to confirm in the API response. For e.g, if you want to find
-#     the segment_type in the structure below:
-#                 "data": {
-#                     "id": "20ce4781-6a11-4b64-8179-15adddaf5991",
-#                     "type": "TRIP",
-#                     "attributes": {
-#                         "category": "ONE_WAY_TRIP",
-#                         "segments": [
-#                             {
-#                                 "segmentType": "OUTBOUND"...
-#     you will have to pass the following as arguements to the function: (data, attributes, segments, segment_type)
-#     all seperated by a comma"""
-#     passed_args = locals()
-#     trail = " "
-#     for i in passed_args['args']:
-#         trail += '[\'' + i + '\']'
-#     return trail
-
-
-# def extract_values_from_response(key):
-#     response = json.loads(query_api())
-#     # value_ = get_response_structure()[key]
-#     return value_
-
-
 # print(extract_values_from_response('category'))
 if __name__ == '__main__':
     query_api()
