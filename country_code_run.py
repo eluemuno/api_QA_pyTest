@@ -1,4 +1,4 @@
-import sqlite3
+#import sqlite3
 import yaml
 import datetime
 import json
@@ -11,12 +11,6 @@ from helpers import db_ops
 import logging
 import pandas as pd
 
-# pd.set_option('display.max_columns', 10)
-pd.set_option('display.width', None)
-pd.set_option('display.max_colwidth', None)
-
-"""The idea is to pick random country codes, pass them as patameters to the /v2/trips endpoint and confirm the output 
-is correct / without spec chars, or errors. """
 
 logging.basicConfig(level=logging.INFO, filename=os.path.dirname(os.path.abspath('country_code_run.py'))
                                                  + '/logs/countryCodeRun_'
@@ -52,8 +46,6 @@ def fetch_payload_params():
 
 def build_payload():
     """Build out the structure of the payload to be used for the POST request to the api endpoint"""
-    # orig = get_random_origin_destination_codes()[0]
-    # dest = get_random_origin_destination_codes()[1]
     orig = random.choice(fetch_country_codes()['iso_code'])
     dest = random.choice(fetch_country_codes()['iso_code'])
     logging.info('Running build_payload with orig: %s and dest: %s', orig, dest)
