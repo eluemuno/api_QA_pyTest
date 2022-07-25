@@ -12,10 +12,6 @@ logging.basicConfig(level=logging.INFO, filename=os.path.dirname(os.path.abspath
                     format='%(process)d--%(asctime)s--%(levelname)s--%(message)s')
 
 
-# orig = json.loads(build_payload())['data']['attributes']['segments'][0]['origin']['countryCode']
-# dest = json.loads(build_payload())['data']['attributes']['segments'][0]['destination']['countryCode']
-
-
 def test_attr_segments_summary_headline():
     data_segment_summary_headline = country_code_run.read_json_file()['data']['attributes']['segments'][0]['summary'][
         'headline']
