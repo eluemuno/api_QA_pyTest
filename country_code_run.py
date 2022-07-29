@@ -118,9 +118,6 @@ def query_api():
             return response
 
 
-# print(query_api())
-
-
 def read_json_file():
     """Convert the api response data to a pandas df"""
     # file = glob.glob(filePath + '/v2trips*')[0].split('/')[-1]
