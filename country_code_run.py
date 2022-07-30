@@ -7,9 +7,7 @@ import requests
 import sys
 import random
 import glob
-from helpers import db_ops
 import logging
-import pandas as pd
 
 
 logging.basicConfig(level=logging.INFO, filename=os.path.dirname(os.path.abspath('country_code_run.py'))
