@@ -1,4 +1,3 @@
-#import sqlite3
 import yaml
 import datetime
 import json
@@ -15,8 +14,6 @@ logging.basicConfig(level=logging.INFO, filename=os.path.dirname(os.path.abspath
                                                  + datetime.datetime.now().strftime('%Y%m%d%H%M%S') + '.txt',
                     format='%(process)d--%(asctime)s--%(levelname)s--%(message)s')
 
-# filePath = os.path.dirname(os.path.abspath('country_code_run.py')) + '/helpers'
-# filePath = os.path.abspath('..') + '/helpers'
 filePath = sys.path[0]
 
 
